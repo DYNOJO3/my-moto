@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Fuentes empaquetadas dentro de la app: funcionan 100% sin internet */
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+html { -webkit-tap-highlight-color: transparent; }
+body { font-family: "Plus Jakarta Sans", system-ui, sans-serif; overscroll-behavior: none; }
+
+/* Elementos que solo tienen sentido en la web (instalar PWA) */
+.native-app [data-web-only] { display: none !important; }
