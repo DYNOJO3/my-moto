@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7f1d1d" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield Container -->
+  <rect width="512" height="512" rx="112" fill="url(#gradRed)" />
+
+  <!-- Inner border ring -->
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#fecaca" stroke-width="8" stroke-opacity="0.3" />
+
+  <!-- Medical Cross with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Vertical Cross Bar -->
+    <rect x="206" y="106" width="100" height="300" rx="28" fill="#ffffff" />
+    <!-- Horizontal Cross Bar -->
+    <rect x="106" y="206" width="300" height="100" rx="28" fill="#ffffff" />
+  </g>
+
+  <!-- Heartbeat pulse rhythm in center -->
+  <path d="M150 256 L205 256 L225 210 L255 305 L285 235 L305 256 L362 256" 
+        fill="none" 
+        stroke="#dc2626" 
+        stroke-width="14" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Small text banner at bottom -->
+  <text x="256" y="455" font-family="sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="4">SOS MÉDICO</text>
+</svg>
